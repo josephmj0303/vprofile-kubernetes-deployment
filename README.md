@@ -48,24 +48,37 @@ Application Load Balancer → Ingress → Tomcat Service → Microservices → B
 vprofile-kubernetes-deployment/
 │
 ├── kubernetes-manifests/
-│ ├── db/
-│ ├── cache/
-│ ├── mq/
-│ ├── app/
-│ ├── ingress/
-│ ├── storage/
-│ └── secrets/
+│   ├── app/
+│   ├── db/
+│   ├── cache/
+│   ├── mq/
+│   ├── ingress/
+│   ├── storage/
+│   └── secrets/
 │
 ├── docs/
-│ ├── architecture.md
-│ ├── deployment-guide.md
-│ ├── troubleshooting.md
-│
-├── scripts/
-│ ├── cluster-setup.sh
-│ ├── deploy.sh
+│   ├── architecture/
+│   │   └── vprofile-k8s-architecture.png
+│   │
+│   ├── screenshots/
+│   │   ├── application/
+│   │   │   ├── login-page.png
+│   │   │   ├── home-page.png
+│   │   │   ├── cache-hit.png
+│   │   │   ├── cache-miss.png
+│   │   │   └── rabbitmq-init.png
+│   │   │
+│   │   └── kubernetes/
+│   │       ├── pods-services.png
+│   │       ├── deployments-created.png
+│   │       └── ingress-details.png
+│   │
+│   ├── deployment-guide.md
+│   ├── architecture.md
+│   └── troubleshooting.md
 │
 └── README.md
+
 ```
 
 
