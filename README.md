@@ -48,13 +48,17 @@ Application Load Balancer → Ingress → Tomcat Service → Microservices → B
 vprofile-kubernetes-deployment/
 │
 ├── kubernetes-manifests/
-│   ├── app/
-│   ├── db/
-│   ├── cache/
-│   ├── mq/
-│   ├── ingress/
-│   ├── storage/
-│   └── secrets/
+│   ├── appdeploy.yaml/
+│   ├── appingress.yaml/
+│   ├── appservice.yaml/
+│   ├── dbdeploy.yaml/
+│   ├── dbpvc.yaml/
+│   ├── dbservice.yaml/
+│   ├── mcdeploy.yaml/
+│   ├── mcservice.yaml/
+│   ├── rmqdeploy.yaml/
+│   ├── rmqservice.yaml/
+│   └── secret.yaml/
 │
 ├── docs/
 │   ├── architecture/
