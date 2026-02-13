@@ -13,6 +13,9 @@ The goal of this project is to showcase **container orchestration, persistent st
 
 Application Load Balancer → Ingress → Tomcat Service → Microservices → Backend Services
 
+## 🏗 Architecture Diagram
+
+![VProfile Architecture](docs/architecture/vprofile-k8s-architecture.png)
 
 ### Components
 - Kubernetes Cluster
@@ -124,27 +127,31 @@ MySQL uses:
 
 ---
 
-## 🚀 Quick Deployment 
+## 🚀 Deployment Steps
 
-# Apply storage
+```bash
+# 1️⃣ Create Persistent Volume Claim
 kubectl apply -f kubernetes-manifests/dbpvc.yaml
 
-# Deploy backend services
+# 2️⃣ Deploy Backend Services
 kubectl apply -f kubernetes-manifests/dbdeploy.yaml
-kubectl apply -f kubernetes-manifests/mcdeploy.yaml
-kubectl apply -f kubernetes-manifests/rmqdeploy.yaml
+kubectl apply -f kubernetes-manifests/dbservice.yaml
 
-# Deploy application layer
+kubectl apply -f kubernetes-manifests/mcdeploy.yaml
+kubectl apply -f kubernetes-manifests/mcservice.yaml
+
+kubectl apply -f kubernetes-manifests/rmqdeploy.yaml
+kubectl apply -f kubernetes-manifests/rmqservice.yaml
+
+# 3️⃣ Deploy Application Layer
 kubectl apply -f kubernetes-manifests/appdeploy.yaml
 kubectl apply -f kubernetes-manifests/appservice.yaml
 
-# Configure ingress
+# 4️⃣ Configure Ingress
 kubectl apply -f kubernetes-manifests/appingress.yaml
 
+```
 ---
-## 🏗 Architecture
-
-![VProfile Architecture](docs/architecture/vprofile-k8s-architecture.png)
 
 ## 📺 Application Demo
 
