@@ -85,7 +85,6 @@ vprofile-kubernetes-deployment/
 
 ```
 
-
 ---
 
 ## 🚀 Deployment Workflow
@@ -125,13 +124,71 @@ MySQL uses:
 
 ---
 
+## 🚀 Quick Deployment 
+
+# Apply storage
+kubectl apply -f kubernetes-manifests/dbpvc.yaml
+
+# Deploy backend services
+kubectl apply -f kubernetes-manifests/dbdeploy.yaml
+kubectl apply -f kubernetes-manifests/mcdeploy.yaml
+kubectl apply -f kubernetes-manifests/rmqdeploy.yaml
+
+# Deploy application layer
+kubectl apply -f kubernetes-manifests/appdeploy.yaml
+kubectl apply -f kubernetes-manifests/appservice.yaml
+
+# Configure ingress
+kubectl apply -f kubernetes-manifests/appingress.yaml
+
+---
+## 🏗 Architecture
+
+![VProfile Architecture](docs/architecture/vprofile-k8s-architecture.png)
+
+## 📺 Application Demo
+
+### Login Page
+![Login Page](docs/screenshots/application/login-page.png)
+
+### Home Page
+![Home Page](docs/screenshots/application/home-page.png)
+
+### Cache Hit
+![Cache Hit](docs/screenshots/application/cache-hit.png)
+
+### Cache Miss
+![Cache Miss](docs/screenshots/application/cache-miss.png)
+
+### RabbitMQ Initialization
+![RabbitMQ](docs/screenshots/application/rabbitmq-init.png)
+
+## ☸ Kubernetes Deployment Proof
+
+### Pods & Services
+![Pods](docs/screenshots/kubernetes/pods-services.png)
+
+### Deployments
+![Deployments](docs/screenshots/kubernetes/deployments-created.png)
+
+### Ingress Details
+![Ingress](docs/screenshots/kubernetes/ingress-details.png)
+---
+## 🧹 Cleanup
+
+```bash
+kubectl delete -f kubernetes-manifests/
+```
+---
+
 ## 📊 Key DevOps Skills Demonstrated
-- Kubernetes Resource Management
-- Stateful Application Deployment
-- Service Discovery
-- Storage Orchestration
-- Secure Secret Handling
-- Cloud Native Application Deployment
+- Multi-tier application deployment on Kubernetes
+- Stateful workloads using PersistentVolumeClaims
+- Ingress-based routing with NGINX
+- Service-to-service communication
+- Secret management
+- AWS EBS storage integration
+- DNS configuration for production-style access
 
 ---
 
@@ -153,6 +210,6 @@ This project demonstrates production-grade Kubernetes deployment patterns includ
 - Monitoring using Prometheus & Grafana
 - Automated CI/CD Pipelines
 
----
+
 
 
