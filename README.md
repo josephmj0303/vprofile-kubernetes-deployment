@@ -12,15 +12,15 @@ The goal of this project is to showcase **container orchestration, persistent st
 ## 🏗 Architecture
 
 ### High Level Flow
-
+```
 Application Load Balancer
-        ↓
+↓
 Ingress
-        ↓
+↓
 Tomcat Service
-        ↓
+↓
 Backend Services (MySQL, RabbitMQ, Memcached)
-
+```
 ### Architecture Diagram
 
 ![VProfile Architecture](docs/architecture/vprofile-k8s-architecture.png)
