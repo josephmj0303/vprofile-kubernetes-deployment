@@ -5,6 +5,8 @@ This project demonstrates deploying the **VProfile Java Microservices Applicatio
 
 The goal of this project is to showcase **container orchestration, persistent storage management, service discovery, secrets management, and ingress-based routing** in a production-like DevOps setup.
 
+> All screenshots and kubectl outputs were captured from a live Kubernetes cluster deployed on AWS.
+
 ---
 
 ## 🏗 Architecture
@@ -19,7 +21,7 @@ Tomcat Service
         ↓
 Backend Services (MySQL, RabbitMQ, Memcached)
 
-## 🏗 Architecture Diagram
+### Architecture Diagram
 
 ![VProfile Architecture](docs/architecture/vprofile-k8s-architecture.png)
 
@@ -156,6 +158,15 @@ kubectl apply -f kubernetes-manifests/appservice.yaml
 # 4️⃣ Configure Ingress
 kubectl apply -f kubernetes-manifests/appingress.yaml
 
+```
+---
+## 🔍 Verify Deployment
+
+```bash
+kubectl get pods
+kubectl get svc
+kubectl get ingress
+kubectl get pvc
 ```
 ---
 
