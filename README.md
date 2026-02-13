@@ -11,7 +11,13 @@ The goal of this project is to showcase **container orchestration, persistent st
 
 ### High Level Flow
 
-Application Load Balancer → Ingress → Tomcat Service → Microservices → Backend Services
+Application Load Balancer
+        ↓
+Ingress
+        ↓
+Tomcat Service
+        ↓
+Backend Services (MySQL, RabbitMQ, Memcached)
 
 ## 🏗 Architecture Diagram
 
@@ -51,17 +57,17 @@ Application Load Balancer → Ingress → Tomcat Service → Microservices → B
 vprofile-kubernetes-deployment/
 │
 ├── kubernetes-manifests/
-│   ├── appdeploy.yaml/
-│   ├── appingress.yaml/
-│   ├── appservice.yaml/
-│   ├── dbdeploy.yaml/
-│   ├── dbpvc.yaml/
-│   ├── dbservice.yaml/
-│   ├── mcdeploy.yaml/
-│   ├── mcservice.yaml/
-│   ├── rmqdeploy.yaml/
-│   ├── rmqservice.yaml/
-│   └── secret.yaml/
+│   ├── appdeploy.yaml
+│   ├── appingress.yaml
+│   ├── appservice.yaml
+│   ├── dbdeploy.yaml
+│   ├── dbpvc.yaml
+│   ├── dbservice.yaml
+│   ├── mcdeploy.yaml
+│   ├── mcservice.yaml
+│   ├── rmqdeploy.yaml
+│   ├── rmqservice.yaml
+│   └── secret.yaml
 │
 ├── docs/
 │   ├── architecture/
