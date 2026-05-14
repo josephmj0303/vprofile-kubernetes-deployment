@@ -1,4 +1,16 @@
 # VProfile Application Deployment on Kubernetes (AWS EKS / Self-Managed Cluster)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Tomcat](https://img.shields.io/badge/Apache_Tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
+![Memcached](https://img.shields.io/badge/Memcached-005571?style=for-the-badge&logo=databricks&logoColor=white)
+![NGINX Ingress](https://img.shields.io/badge/NGINX_Ingress-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Amazon EBS](https://img.shields.io/badge/Amazon_EBS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Persistent Storage](https://img.shields.io/badge/Persistent_Storage-Kubernetes-blue?style=for-the-badge)
+![Kubernetes Secrets](https://img.shields.io/badge/Kubernetes-Secrets-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+
 
 ## 📌 Project Overview
 This project demonstrates deploying the **VProfile Java Microservices Application** into a Kubernetes cluster using Infrastructure-as-Code and Kubernetes manifests.
