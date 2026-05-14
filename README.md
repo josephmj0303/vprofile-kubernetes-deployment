@@ -246,6 +246,14 @@ This project demonstrates production-grade Kubernetes deployment patterns includ
 - Monitoring using Prometheus & Grafana
 - Automated CI/CD Pipelines
 
+---
+
+## 👨‍💻 Author
+
+DevOps Engineer Portfolio Project
+
+AWS | Docker | Kubernetes | Cloud Infrastructure
+
 
 
 
