@@ -1,4 +1,4 @@
-# Use Case
+# Use Case #
 
 This project simulates deploying a real-world multi-tier enterprise application into Kubernetes.
 
