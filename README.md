@@ -1,4 +1,4 @@
-# VProfile Application Deployment on Kubernetes (AWS EKS / Self-Managed Cluster)
+# 🚀 VProfile Application Deployment on Kubernetes (AWS EKS / Self-Managed Cluster)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Tomcat](https://img.shields.io/badge/Apache_Tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black)
